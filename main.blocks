@@ -1,0 +1,25 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="SMP$UX?_A[7+cPDbWive">Wert</variable><variable id="=Z6(R=H%8!]%Pbm;_}BQ">list</variable></variables><block type="function_definition" id="Ca#uCZLudQ6g=l`rxL?T" x="569" y="-33"><mutation name="links" functionid="Est`OuPFPxRm/m|PL/Er"/><field name="function_name">links</field><statement name="STACK"><block type="controls_if" id="*bahMHgM?-dDFVH67)fS"><value name="IF0"><shadow type="logic_boolean" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="JoyCar_linefinder" id="T`rAl/12IL-}XmL25;{7"><field name="selection">SensorLCRSelection.Left</field></block></value><statement name="DO0"><block type="JoyCar_turn" id="mVsozTE@*|aaJ7Mf,JH["><field name="orientation">FRDirection.Forward</field><field name="direction">LRDirection.Left</field><value name="speed"><shadow type="math_number_minmax" id="^|VZ@C5~vwmH1hZ1@)Wb"><mutation min="0" max="100" label="Speed" precision="0"/><field name="SLIDER">100</field></shadow></value><value name="radius"><shadow type="math_number_minmax" id="*ZV.}Tb~sZ=oTR#=Fw5n"><mutation min="0" max="5" label="Radius" precision="0"/><field name="SLIDER">1</field></shadow></value><next><block type="device_show_leds" id="G6;mUN{vVVFr!OO[mNP+"><field name="LEDS">`
+        . # . . . 
+        . . # . . 
+        . . . # . 
+        . . # . . 
+        . # . . .
+        `</field></block></next></block></statement></block></statement></block><block type="device_forever" id="M^DYc:9yLy3B36xRqwK%" x="0" y="0"><statement name="HANDLER"><block type="controls_if" id="S{E*s(5;wQg+?!GC=GN|"><mutation elseif="1" else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="JoyCar_obstacleavoidance" id="djX@pN]BB^+avCn9`_n3"><field name="selection">SensorLRSelection.Right</field></block></value><statement name="DO0"><block type="function_call" id="1dwL6F]G$]}FF64#Z@`@"><mutation name="links" functionid="Est`OuPFPxRm/m|PL/Er"/></block></statement><value name="IF1"><block type="JoyCar_obstacleavoidance" id="o#2UjaUTjDo46na#V+x$"><field name="selection">SensorLRSelection.Left</field></block></value><statement name="DO1"><block type="function_call" id="/%RN[%--v1xW2_TMB_|c"><mutation name="rechts" functionid="~h2,raY_bUzpXCS#OI{("/></block></statement><statement name="ELSE"><block type="JoyCar_drive" id="Fmq]FGvIaWOW6gcVS$Yt"><field name="direction">FRDirection.Forward</field><value name="speed"><shadow type="math_number_minmax" id="L_G:Bd^xVLJn=aAuV2}n"><mutation min="0" max="100" label="Speed" precision="0"/><field name="SLIDER">20</field></shadow></value><next><block type="device_show_leds" id="gzC$_]ayS}DW)P]`OE0E"><field name="LEDS">`
+        . . . . . 
+        # . . . # 
+        . # . # . 
+        . . # . . 
+        . . . . .
+        `</field></block></next></block></statement></block></statement></block><block type="function_definition" id="Wv3*i3|=;Jx8r.w({^#Q" x="1046" y="-34"><mutation name="rechts" functionid="~h2,raY_bUzpXCS#OI{("/><field name="function_name">rechts</field><statement name="STACK"><block type="controls_if" id=".4/,l!Ab^qBr,a8pCOQ]"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="JoyCar_obstacleavoidance" id="+*m3jY;_lrAVY@{S;8rj"><field name="selection">SensorLRSelection.Right</field></block></value><statement name="DO0"><block type="JoyCar_turn" id="{KQ-=n]Oc=amvc`J9RnX"><field name="orientation">FRDirection.Forward</field><field name="direction">LRDirection.Right</field><value name="speed"><shadow type="math_number_minmax" id="7P$)LyeL@5+KQeHP9`3~"><mutation min="0" max="100" label="Speed" precision="0"/><field name="SLIDER">100</field></shadow></value><value name="radius"><shadow type="math_number_minmax" id="*(u]tLUS[K,`gF594Xyc"><mutation min="0" max="5" label="Radius" precision="0"/><field name="SLIDER">1</field></shadow></value><next><block type="device_show_leds" id="3p9o~YJY!Zt}I!lV^{ZZ"><field name="LEDS">`
+        . . . # . 
+        . . # . . 
+        . # . . . 
+        . . # . . 
+        . . . # .
+        `</field></block></next></block></statement></block></statement></block><block type="function_definition" id="*DM:#6=$-LaQ;eQ_nI#~" x="366" y="570"><mutation name="halt" functionid="?@;_VKk#`-dFKE4$voMH"/><field name="function_name">halt</field><statement name="STACK"><block type="JoyCar_stop" id="95K,G*qX{vR+NRLY~ok$"><field name="intensity">StopIntensity.Soft</field><next><block type="device_show_leds" id="f215HaoKV6VBgf.Mq{*G"><field name="LEDS">`
+        . # # # . 
+        # . . # # 
+        # . # . # 
+        # # . . # 
+        . # # # .
+        `</field></block></next></block></statement></block></xml>
